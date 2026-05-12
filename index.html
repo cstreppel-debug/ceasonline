@@ -229,9 +229,9 @@ tailwind.config = {
 <!-- ============ NAV ============ -->
 <header id="nav" class="fixed top-0 inset-x-0 z-50 border-b border-transparent transition-colors">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between">
-    <a href="#top" class="flex items-center" aria-label="CEAS Online">
+    <a href="#top" class="relative inline-flex items-center" aria-label="CEAS Online">
       <img id="navLogoLight" src="assets/ceas-logo-light.png" alt="CEAS Online" class="h-14 w-auto block transition-opacity">
-      <img id="navLogoDark" src="assets/ceas-logo-trim.png" alt="" aria-hidden="true" class="h-14 w-auto -ml-[100%] opacity-0 transition-opacity">
+      <img id="navLogoDark" src="assets/ceas-logo-trim.png" alt="" aria-hidden="true" class="h-14 w-auto absolute inset-0 opacity-0 transition-opacity">
     </a>
     <nav id="navLinks" class="hidden md:flex items-center gap-8 text-[14.5px] font-medium text-white/85 transition-colors">
       <a class="nav-link" href="#diensten">Diensten</a>
@@ -651,17 +651,13 @@ tailwind.config = {
       </a>
 
       <!-- Project 2 -->
-      <a href="https://chimerical-tapioca-8655b0.netlify.app/index.html" target="_blank" rel="noopener" class="lift group rounded-2xl bg-white border border-navy-100 overflow-hidden shadow-card hover:shadow-cardHover block">
+      <article class="lift group rounded-2xl bg-white border border-navy-100 overflow-hidden shadow-card hover:shadow-cardHover block">
         <div class="relative aspect-[4/3] bg-navy-100 overflow-hidden">
           <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://chimerical-tapioca-8655b0.netlify.app/index.html"
                alt="Screenshot van Betonvloer Behandelen website"
                class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                loading="lazy"
                onerror="this.style.display='none'; this.parentElement.classList.add('bg-gradient-to-br','from-cyan-500','to-cyan-600');">
-          <div class="absolute top-3 right-3 inline-flex items-center gap-1.5 bg-white/95 backdrop-blur text-navy-700 text-[11px] font-semibold px-2.5 py-1 rounded-full shadow">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 5h5v5M19 5 10 14M5 7v12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Live
-          </div>
         </div>
         <div class="p-6">
           <div class="flex items-center justify-between text-[12px] font-semibold tracking-wider uppercase text-navy-400">
@@ -674,20 +670,16 @@ tailwind.config = {
             <span class="text-[11.5px] font-medium px-2.5 py-1 rounded-full bg-navy-50 text-navy-600">Bouw</span>
           </div>
         </div>
-      </a>
+      </article>
 
       <!-- Project 3 -->
-      <a href="https://autobedrijf-kaya.vercel.app/index.html" target="_blank" rel="noopener" class="lift group rounded-2xl bg-white border border-navy-100 overflow-hidden shadow-card hover:shadow-cardHover block">
+      <article class="lift group rounded-2xl bg-white border border-navy-100 overflow-hidden shadow-card hover:shadow-cardHover block">
         <div class="relative aspect-[4/3] bg-navy-100 overflow-hidden">
           <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://autobedrijf-kaya.vercel.app/index.html"
                alt="Screenshot van Autobedrijf Kaya website"
                class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                loading="lazy"
                onerror="this.style.display='none'; this.parentElement.classList.add('bg-gradient-to-br','from-navy-50','to-navy-100');">
-          <div class="absolute top-3 right-3 inline-flex items-center gap-1.5 bg-white/95 backdrop-blur text-navy-700 text-[11px] font-semibold px-2.5 py-1 rounded-full shadow">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 5h5v5M19 5 10 14M5 7v12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Live
-          </div>
         </div>
         <div class="p-6">
           <div class="flex items-center justify-between text-[12px] font-semibold tracking-wider uppercase text-navy-400">
@@ -700,7 +692,7 @@ tailwind.config = {
             <span class="text-[11.5px] font-medium px-2.5 py-1 rounded-full bg-navy-50 text-navy-600">Automotive</span>
           </div>
         </div>
-      </a>
+      </article>
     </div>
   </div>
 </section>
